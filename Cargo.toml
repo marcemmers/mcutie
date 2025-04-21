@@ -23,7 +23,7 @@ embassy-net = { version = "0.6.0", features = [
   "proto-ipv4",
   "tcp",
 ] }
-embassy-time = "0.4"
+embassy-time = { version = "0.4", git = "https://github.com/embassy-rs/embassy.git" }
 serde = { version = "1.0.217", default-features = false, features = [
   "derive",
 ], optional = true }
