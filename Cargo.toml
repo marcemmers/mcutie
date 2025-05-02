@@ -16,14 +16,14 @@ log = ["dep:log"]
 [dependencies]
 defmt = { version = "0.3.10", optional = true }
 log = { version = "0.4.22", optional = true }
-embassy-net = { version = "0.7.0", git = "https://github.com/marcemmers/embassy.git", branch = "uart-enable-disable-control", features = [
+embassy-net = { version = "0.7.0", git = "https://github.com/marcemmers/embassy.git", branch = "remove-instance-from-rp-uart-type", features = [
   "dns",
   "medium-ip",
   "medium-ethernet",
   "proto-ipv4",
   "tcp",
 ] }
-embassy-time = { version = "0.4", git = "https://github.com/marcemmers/embassy.git", branch = "uart-enable-disable-control" }
+embassy-time = { version = "0.4", git = "https://github.com/marcemmers/embassy.git", branch = "remove-instance-from-rp-uart-type" }
 serde = { version = "1.0.217", default-features = false, features = [
   "derive",
 ], optional = true }
